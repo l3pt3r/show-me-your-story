@@ -1,0 +1,16 @@
+video{
+    height: 100vh;
+    width: 100%;
+}
+
+.changeCamera{
+    position: fixed;
+    width: 100%;
+    right: 0;
+    bottom:15vh;
+}
+
+.changeCamera > i{
+    margin: auto;
+    display: block;
+}

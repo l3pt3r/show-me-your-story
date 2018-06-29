@@ -1,0 +1,28 @@
+header{
+    margin-bottom: 1em;
+}
+
+article:first-child{
+    margin-top: 1em;
+}
+
+article{
+    margin-top: 3em;
+}
+
+.imageList{
+    list-style: none;
+}
+
+p{
+    margin: 1em 0;
+}
+
+.projectsButton{
+    margin: 1em 0;
+    padding: 1em;
+}
+
+footer{
+    margin-top: 2em;
+}

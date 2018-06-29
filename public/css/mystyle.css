@@ -1,0 +1,104 @@
+.mainSection {
+    margin: 4em 0 2em 0;
+    padding: 1em 1em 0 1em;
+}
+
+.aboutText {
+    align-self: center;
+}
+
+.desktopNav {
+    display: none !important;
+}
+
+.onCenter {
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+}
+
+.smallPadding {
+    padding: 1em !important;
+}
+
+.bigPaddingOnDesktop {
+    padding: 1em !important;
+}
+
+.smallMarginBottom{
+    margin-bottom: 0.5em;
+}
+
+@media only screen and (min-width: 720px) {
+    .profileInfo {
+        max-width: 80%;
+    }
+
+    .menuBtn{
+        display: none !important;
+    }
+
+    .desktopNav {
+        display: inherit !important;
+    }
+
+    .commonHeight{
+        height: 18em;
+    }
+
+    .bigPaddingOnDesktop {
+        padding: 5em !important;
+    }
+}
+
+
+/* Custom icons */
+
+i.javascript:before {
+    content: url('/img/js.png')
+}
+
+i.semantic:before {
+    content: url('/img/icons/semantic-ui.jpg');
+}
+
+/* Slick */
+
+.imageElement {
+    margin: 0 auto;
+    height: 55vh;
+    max-width: 100%;
+}
+
+.prevArrow {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    left: 0;
+}
+
+.nextArrow {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    right: 0;
+}
+
+.slick-dots {
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots > li {
+    position: relative;
+    display: inline-block;
+    margin: 0 1em
+}
+
+.slick-dots .dotElement {
+    color: grey;
+}
+
+.slick-dots .slick-active .dotElement {
+    color: black;
+}
