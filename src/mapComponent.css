@@ -1,0 +1,14 @@
+.mapComponent{
+    height: 70vh;
+    width: 100vw;
+    margin-top:5vh !important; 
+}
+
+.mapSidebar{
+    min-width: 100%!important;
+    height: 100%;
+}
+
+.mapSidebar > .item{
+    height: 25%!important;
+}

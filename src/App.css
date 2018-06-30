@@ -1,3 +1,23 @@
 footer{
     height: 14vh;
 }
+
+.noPadding{
+    padding: 0!important;
+}
+
+i.profpic:before {
+    content: url('/img/icons/prof.png');
+ }
+ 
+ i.mytrip:before {
+    content: url('/img/icons/trip.png')
+ }
+ 
+ i.labyrinth:before {
+    content: url('/img/icons/map.png')
+ }
+ 
+ i.recocam:before {
+    content: url('/img/icons/cam.png')
+ }

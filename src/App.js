@@ -2,21 +2,26 @@ import React, { Component } from 'react';
 import './App.css';
 import HeaderBar from './componets/headerBar';
 import BottomBar from './componets/bottomBar';
-import CameraComponent from './componets/cameraComponent';
+import ViewSelector from './componets/viewSelector';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { 'selectedArea': '-', 'column': 1, 'text': '' }
+    this.state = {
+      'selectedView': 3
+    }
   }
 
+  changeSelectedView(newView){
+    this.setState({'selectedView':newView});
+  }
 
   render() {
     return (
       <div>
         <HeaderBar name="Dest.in" />
-        <CameraComponent />
-        <BottomBar />
+        <ViewSelector selectedView={this.state.selectedView} />
+        <BottomBar selectedView={this.state.selectedView} changeSelectedView={this.changeSelectedView.bind(this)}/>
       </div>
     );
   }
