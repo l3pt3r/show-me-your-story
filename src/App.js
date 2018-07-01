@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <HeaderBar name="Dest.in" />
+        <HeaderBar name="GuiDest" />
         <ViewSelector selectedView={this.state.selectedView} />
         <BottomBar selectedView={this.state.selectedView} changeSelectedView={this.changeSelectedView.bind(this)}/>
       </div>

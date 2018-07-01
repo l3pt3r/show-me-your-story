@@ -12,6 +12,14 @@ class MapComponent extends Component {
             },
             zoom: 11
         };
+        this.state = { lat: 35.34365 }
+    }
+
+    addLat = () => {
+        console.log('hi');
+        this.setState(prevSt=>({
+            lat:prevSt.lat+0.0005
+        }))
     }
 
     render() {
@@ -42,17 +50,17 @@ class MapComponent extends Component {
             <div className="ui grid mapComponent">
                 <div className="three wide column">
                     <div className="ui vertical icon menu mapSidebar">
-                        <a className="item">
-                            <i className="gamepad icon"></i>
+                        <a className="item" onClick={this.addLat}>
+                            <i className="trophy icon"></i>
                         </a>
                         <a className="item">
-                            <i className="video camera icon"></i>
+                            <i className="map marker alternate camera icon"></i>
                         </a>
                         <a className="item">
-                            <i className="video play icon"></i>
+                            <i className="university icon"></i>
                         </a>
                         <a className="item">
-                            <i className="location arrow play icon"></i>
+                            <i className="bus icon"></i>
                         </a>
                     </div>
                 </div>
@@ -63,7 +71,8 @@ class MapComponent extends Component {
                         defaultZoom={this.props.zoom}
                     >
                         <AnyReactComponent
-                            lat={35.34365}
+                            onClick={this.addLat}
+                            lat={this.state.lat}
                             lng={25.13620}
                             text={'Koules'}
                         />

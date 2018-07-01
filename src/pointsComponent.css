@@ -1,0 +1,8 @@
+.pointsComponent{
+    margin: 12vh 0 0 0;
+    width: 96%;
+}
+
+.pointsComponent > .grid{
+    height: 70vh;
+}

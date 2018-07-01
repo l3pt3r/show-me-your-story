@@ -44,9 +44,6 @@ class CameraComponent extends Component {
             height: 720,
             facingMode: this.state.facingMode === true ? 'environment' : 'user'
         };
-        console.log('On2...',this.state.facingMode);
-        console.log(videoConstraints.facingMode);
-        console.log(this.state.facingMode === true ? 'environment' : 'user');
 
         return (
             <div>

@@ -11,4 +11,6 @@
 
 .mapSidebar > .item{
     height: 25%!important;
+    display: flex!important;
+    align-items: center;
 }
